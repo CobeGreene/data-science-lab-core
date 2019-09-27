@@ -1,0 +1,24 @@
+{
+  "name": "data-science-lab-core",
+  "version": "1.0.0",
+  "description": "Core services and interfaces to build plugins for the data science lab core.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CobeGreene/data-science-lab-core.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CobeGreene/data-science-lab-core/issues"
+  },
+  "homepage": "https://github.com/CobeGreene/data-science-lab-core#readme",
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
+}
