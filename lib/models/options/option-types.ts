@@ -1,4 +1,4 @@
-export enum OptionTypes {
+export const enum OptionTypes {
     Text = 0,
     Number,
     Command,
