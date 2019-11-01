@@ -1,6 +1,6 @@
 {
   "name": "data-science-lab-core",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Core services and interfaces to build plugins for the data science lab core.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,6 +8,9 @@
     "prepublish": "npm run build",
     "build": "tsc"
   },
+  "bundleDependencies": [
+    
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CobeGreene/data-science-lab-core.git"
