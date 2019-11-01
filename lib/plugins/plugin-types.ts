@@ -1,3 +1,3 @@
-export const enum PluginTypes {
+export enum PluginTypes {
     Fetch = 'Fetch',
 }
