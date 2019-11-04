@@ -1,4 +1,4 @@
-export { Request, Response, WebService } from './services';
+export { Request, Response, WebService, FileService } from './services';
 export { CheckboxOption, ChoicesOption, CommandOption,
          NumberOption, Option, OptionList,
          OptionTypes, TextOption,
