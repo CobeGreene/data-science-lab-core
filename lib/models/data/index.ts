@@ -1,1 +1,1 @@
-export { Vector } from './vector';
+export { FetchPluginData } from './fetch-plugin-data';

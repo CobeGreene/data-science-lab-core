@@ -1,10 +1,10 @@
 import { PluginOptions } from "./plugin-options";
-import { Vector } from "../models";
+import { FetchPluginData } from "../models";
 import { FileService } from "../services";
 
 export abstract class FetchPlugin {
     abstract getOptions(): PluginOptions;
-    abstract fetch(): Vector[];
+    abstract fetch(): FetchPluginData;
 
     setFileService(fileService: FileService) {
 
