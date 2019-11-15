@@ -1,9 +1,9 @@
 import { PluginOptions } from "./plugin-options";
-import { PluginData } from "../models";
+import { PluginData, PluginDataInput } from "../models";
 
 
 export abstract class TransformPlugin {
     abstract getOptions(): PluginOptions;
-
-    abstract transform(): PluginData;
+    abstract getInputs(): PluginDataInput[];
+    abstract transform(): PluginData[] | PluginData;
 } 
