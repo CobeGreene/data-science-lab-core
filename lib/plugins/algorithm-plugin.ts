@@ -10,6 +10,8 @@ export abstract class AlgorithmPlugin {
 
     abstract step(): void;
 
+    abstract finishTraining(): boolean;
+
     setRecorderService(recorder: RecorderService) {
 
     } 

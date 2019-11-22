@@ -1,6 +1,6 @@
 {
   "name": "data-science-lab-core",
-  "version": "0.0.16",
+  "version": "0.0.18",
   "description": "Core services and interfaces to build plugins for the data science lab core.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
