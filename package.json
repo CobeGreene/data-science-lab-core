@@ -8,9 +8,7 @@
     "prepublish": "npm run build",
     "build": "tsc"
   },
-  "bundleDependencies": [
-    
-  ],
+  "bundleDependencies": [],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CobeGreene/data-science-lab-core.git"
