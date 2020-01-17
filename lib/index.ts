@@ -3,4 +3,5 @@ export { CheckboxOption, ChoicesOption, CommandOption,
          NumberOption, Option, OptionList,
          OptionTypes, TextOption, 
         PluginData, PluginDataInput } from './models';
-export { FetchPlugin, PluginOptions, AlgorithmPlugin, PluginTypes, TransformPlugin, PluginInputs } from './plugins';
+export { FetchPlugin, PluginOptions, AlgorithmPlugin, PluginTypes, TransformPlugin, PluginInputs, VisualizationPlugin } from './plugins';
+

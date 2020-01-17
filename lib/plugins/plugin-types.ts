@@ -1,5 +1,6 @@
 export enum PluginTypes {
     Fetch = 'Fetch',
     Transform = 'Transform',
-    Algorithm = 'Algorithm'
+    Algorithm = 'Algorithm',
+    Visualization = 'Visualization'
 }
