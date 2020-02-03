@@ -1,6 +1,7 @@
 import { PluginOptions } from "./plugin-options";
 import { RecorderService } from "../services";
 import { PluginInputs } from "./plugin-inputs";
+import { PluginDataInput } from "../models";
 
 export abstract class AlgorithmPlugin {
     abstract getOptions(): PluginOptions;
@@ -15,4 +16,8 @@ export abstract class AlgorithmPlugin {
     setRecorderService(recorder: RecorderService) {
 
     } 
+
+    abstract getTestingInputs(): { input: PluginInputs, output?: PluginDataInput[] };
+
+    abstract test(...args: any): any[];
 }
