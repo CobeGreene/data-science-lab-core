@@ -17,7 +17,7 @@ export abstract class AlgorithmPlugin {
 
     } 
 
-    abstract getTestingInputs(): { input: PluginInputs, output?: PluginDataInput[] };
+    abstract getTestingInputs(): { input: PluginDataInput[], output?: PluginDataInput[] };
 
-    abstract test(...args: any): any[];
+    abstract test(...args: any[]): any[];
 }
