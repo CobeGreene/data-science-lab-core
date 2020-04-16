@@ -1,6 +1,3 @@
-
-
 export interface FileService {
-    openFile(callback: (buffer: Buffer) => void,
-        filters?: { name: string, extensions: string[] }[]): void;
+    openFile(filters?: { name: string, extensions: string[] }[]): Promise<Buffer>;
 }

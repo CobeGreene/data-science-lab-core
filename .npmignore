@@ -1,2 +1,4 @@
 lib/
 tsconfig.json
+dist/spec/
+coverage/

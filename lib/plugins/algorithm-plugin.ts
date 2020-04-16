@@ -9,7 +9,7 @@ export abstract class AlgorithmPlugin {
 
     abstract initialize(): void;
 
-    abstract step(): void;
+    abstract step(): Promise<void>;
 
     abstract finishTraining(): boolean;
 
@@ -19,8 +19,8 @@ export abstract class AlgorithmPlugin {
 
     abstract getTestingInputs(): { input: PluginDataInput[], output?: PluginDataInput[] };
 
-    abstract test(...args: any[]): any[];
+    abstract test(argument: {[id: string]: any[]}): any[];
 
-    abstract export(): string;
-    abstract import(json: string): AlgorithmPlugin;
+    abstract export(minimal: boolean): string;
+    abstract import(json: string, minimal: boolean): AlgorithmPlugin;
 }

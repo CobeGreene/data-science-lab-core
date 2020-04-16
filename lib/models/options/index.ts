@@ -1,4 +1,3 @@
-export { OptionList } from './option-list';
 export { Option } from './option';
 export { OptionTypes } from './option-types';
 export { CheckboxOption } from './checkbox-option';

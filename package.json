@@ -1,12 +1,13 @@
 {
   "name": "data-science-lab-core",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "Core services and interfaces to build plugins for the data science lab core.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "prepublish": "npm run build",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "karma start karma-coverage.js"
   },
   "bundleDependencies": [],
   "repository": {
@@ -20,7 +21,17 @@
   },
   "homepage": "https://github.com/CobeGreene/data-science-lab-core#readme",
   "devDependencies": {
+    "@types/jasmine": "^3.5.10",
     "@types/node": "^12.11.1",
-    "typescript": "^3.6.3"
+    "jasmine": "^3.5.0",
+    "jasmine-core": "^3.5.0",
+    "karma": "^5.0.1",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-cli": "^2.0.0",
+    "karma-coverage": "^2.0.2",
+    "karma-jasmine": "^3.1.1",
+    "karma-jasmine-html-reporter": "^1.5.3",
+    "karma-typescript": "^5.0.2",
+    "typescript": "^3.8.3"
   }
 }
