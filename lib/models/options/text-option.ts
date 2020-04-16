@@ -3,10 +3,14 @@ import { OptionTypes } from './option-types';
 
 export class TextOption extends Option {
 
-    public maxLength?: number;
+    public max?: number;
+    public min?: number;
+    public pattern?: string;
 
-    constructor(option: { id: string, label: string, maxLength?: number }) {
+    constructor(option: { id: string, label: string, max?: number, min?: number, pattern?: string }) {
         super({ id: option.id, label: option.label, type: OptionTypes.Text });
-        this.maxLength = option.maxLength;
+        this.max = option.max;
+        this.min = option.min;
+        this.pattern = option.pattern;
     }
 }
