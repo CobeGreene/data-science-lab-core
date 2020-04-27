@@ -21,6 +21,6 @@ export abstract class AlgorithmPlugin {
 
     abstract test(argument: {[id: string]: any[]}): {[id: string]: any[]};
 
-    abstract export(minimal: boolean): string;
-    abstract import(json: string, minimal: boolean): AlgorithmPlugin;
+    abstract export(minimal: boolean): Promise<string>;
+    abstract import(json: string, minimal: boolean): Promise<AlgorithmPlugin>;
 }
